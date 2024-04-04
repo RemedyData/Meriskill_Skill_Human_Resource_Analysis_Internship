@@ -189,7 +189,9 @@ Summary of the insights gained into the company's performance:
 
 - There are no doubts that the Human Resource performancde is staggering  which definitely affects the company's returns.
 
-- From the analysis done, older employees, divorced employees and those living very farther from the company are more likely to be retained for a longer period of time.
+- From the analysis done female gender, older employees, divorced employees and those living very farther from the company are more likely to be retained for a longer period of time.
+
+- Those with good work life balance and are more nearer to the customers are more attrited
 - It is suggested that a friendly survey be conducted among the employees at certain intervals yearly so as give the management team a better understanding of their employees.
 
 - Likewise, more incentives should be offered to the employees so as to retain them for a longer period. 
