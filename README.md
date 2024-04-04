@@ -14,18 +14,20 @@ Meriskill Internship: HR Analytics; Delving into the world of human resources, w
 
 This is a Human Resources performance analysis. It is done by analyzing data from the HR-Employee Attrition table which comprises of Age column, Attrition column, 
 
-
-
-. I used Excel to get an overview of the dataset before importing it into Power BI where the actual analysis was carried out. 
+I used Excel to get an overview of the dataset before importing it into Power BI where the actual analysis was carried out. 
 
 ## Problem Statement
 
 The goal of this analysis is to:
 
-- Determine noticable sales trends over time
-- Know which are the best and worst selling products
-- Identify the company's key customers
-- Determine shipping costs across providers
+- Determine the demographics:
+This entails employee statistics including age groups, gender, distance from home, marital status providing insight into workforce diversity and commuting patterns for informed-decision making.
+
+- Determine the turn over analysis:
+This section consolidates employee data featuring attrition by job level, departures by department, business travel impact, total years in current roles, overtime performance ratings, monthly income, attrition increase level offering critical insights for effective HR strategies and informed-decision making
+
+- Know the employee well-being
+
 - Finally, the goal is to create data-driven plans that can aid in increasing sales, improving customer satisfaction, and driving the company's growth
 
 ## Skills and Concepts Demonstrated:
@@ -44,172 +46,124 @@ The goal of this analysis is to:
    ---
   ## Data Source:
   
-The dataset for the work is gotten from Meriskill. It consist of 185,951 records and 11 fields of data. I studied the dataset well to gain proper insight into the dataset. You can find a link to download the dataset [here:](https://drive.google.com/drive/folders/1IlsIC66p5HGBtNkntD872Gkx1j_3Nwdd?usp=drive_link)
+The dataset for the work is gotten from Meriskill. It consist of 1,471 records and 35 fields of data. I studied the dataset well to gain proper insight into the dataset. You can find a link to download the dataset [here:](https://drive.google.com/drive/folders/1ZOfwcTEByzmRlYkhohozQ5Or-LYBq4-P?usp=drive_link)
 
    ---
 
-## Data Transformation:
+## Data Transformation and Visualization::
 
 ## STEP 1:
-I downloaded the dataset, uploaded it using the 'Get Data' option in Power BI, 
-and then proceeded to transform the data.
+I downloaded the dataset and uploaded the data using the "Get Data" option in 
+Power BI. Then, I utilized the "Transform" option to check for any null values 
+in the dataset.
 
 ## STEP 2:
-The column headers are identified in the first row and kept them as 
-headers by following the steps below.
+I chose the card visual. Using the "Format Visual" option, I customized the design of the card as 
+needed.
 
-![Meriskill-2](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/9ed27d2d-a352-4db7-aca3-338ad908403e)
+![Internship-1](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/9f267f3f-5e6b-4ee8-b965-b3c96300837f)
 
 
 
-## STEP 3:
-• After promoting the headers, I navigate to the 'Transform' tab and select 
-'Detect Data Type.' This action automatically identifies the data type 
-of each column and convert them as needed.
 
-![Meriskill-3](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/3cf92fbf-e148-4a84-9237-a6137ce4db92)
+## STEP 3: 
+Total attrition by education field by clustered bar chart
 
 
 
 ## STEP 4:
-• I split the datetime into date and time stamp
+I chose two donut charts, then dragged and dropped 
+the provided columns. I applied different colours 
+to distinguish between them.
 
-![Meriskill-4](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/13bd31a8-93eb-4f70-ac86-383491e2bde9)
-
-
-• The aforementioned process starts with selecting the desired column. 
-Following the selection, the option to split the column becomes visible.
-
-![Meriskill-4a](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/5a13d9b3-ce69-46d9-93e7-4b263376d187)
+To obtain the counts of 237 and 1233, I followed these steps: 
+- I navigated to the table view
+- I clicked "New Column," and apply the provided formula.
 
 
-• I chose the 'Split Column' option and select the space as the delimiter. 
-• Upon completing the data transformation, I clicked on 'Close & Apply' 
-located at the top left of the menu bar.
+![Internship-3](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/208b34c8-96ed-481b-a35c-141b667aa275)
 
-![Meriskill-4b](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/47fac072-4abe-4a6f-9e9e-514ef92d44f7)
+This yielded the desired results: 
+
+if "Attrition" is "Yes," the count is 1; 
+if it's "No," the count is 0.
+
+![Internship-3a](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/fcc4fdcb-dae7-4294-a3d4-83ece98215a9)
 
 
+Summing all the 1s gives the total attrition count that is 237 
+And subtracting this from the employee count yields the count of active 
+employees that is 1233
 
+![Internship-3b](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/31d8dcfa-acb4-418e-830b-98a759ec9f09)
+
+By dragging and dropping it in the field I got the active employees
+
+
+## STEP 4: 
+Using data groups for making better visuals. Using groups, I aggregated certain values together to form meaningful subsets.
+Furthermore, I created three visuals using the concept of grouping to organize and display the data effectively.
+
+- Firstly, I choose the column I want to group
+
+![Internship-4](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/8ffbaf8e-766f-4a13-acc8-17572ca74ef8)
+
+- Then, I changed the group type from BIN to LIST
+
+![Internship-4a](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/9fdfd66d-61cd-42d3-a891-3f72011a9972)
+
+![Internship-4b](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/0402cd39-6595-4249-a5e0-12e86e8d6a7d)
+
+
+I grouped: 
+- 1 as "Bad"
+- 2 as "Average"
+- 3 as "Good"
+- 4 as "Excellent."
+
+ 
+• Then, I dragged and dropped in the fields.
+• I did the same grouping steps for “AGE” and distance from home.
+• For distance from home, I grouped: 
+- 1-10 as "near"
+- 10-20 as "far"
+- 20 – 30 as "very far".
+
+## STEP 5: 
+Total attrition by marital status using stacked column chart
+
+## STEP 6: 
+Gender count using donut chart.
 
 
 
 
 ---
 
-## Data Visualization:
-
-## STEP 1:
-
-Sales trend over time using the line chart
-
-• I clicked on the Month name and Sales column and dragged it to the desired 
-position
-![Visual-1](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/febd7af4-d81e-4ae8-93e8-a07568810fe2)
-
-
-• To create a Chronological order for the months, I followed these steps:
-1. I selected the column containing the months.
-2. I navigated to the "Column Tools" and choose "Sort Column."
-3. I selected "Sort by Month Number" to sort the months in 
-chronological order
-
-![Visual-1a](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/3aaf7979-40e1-49ba-b206-68203e24df4c)
-
-
-
-## STEP 2: Best selling products using tree map
-• To edit theme for background color and font size, I accessed the "Format" option for the visualization and adjust the settings as desired.
-
-![Visual-2](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/500c3cb1-4829-46be-8d5d-5b1226fc0647)
-
-
-## STEP 3: Top 5 best selling product using stacked bar chart
-1. To manipulate the visualization, I performed the following steps:
-•  I dragged and dropped the "Product" into the Y-axis.
-•  I placed the "Quantity" into the X-axis for appropriate ordering
-
-![Visual-3](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/948c5427-6cdb-45d5-9a01-02ab88e908ed)
-
-
-## STEP 4: Top 5 cities by sales using map
-
-![Visual-4](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/d30dc089-fa18-486a-bc1d-9f4a07fdba73)
-
-
-
-## STEP 5: Weekly sales distribution by weekday using column chart
-
-![Visual-5](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/6d24457f-9b3f-4d0f-873a-227725919449)
-
-
-
-## STEP 6: Slicer is used to make this kind of visual
-• To create a slicer visualization, I dragged and dropped the "Month Name" field 
-into the slicer option. 
-- To display the slicer in a vertical list, I accessed the 
-slicer settings and choose the option for a vertical column layout.
-
-![Visual-6](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/ab847200-993e-4057-940f-0fb2cf271ba5)
-
-
-
-## STEP 7: To find the revenue metrics:
-• Total profit: I summed up the net profit from all sales transactions.
-• Sales quantity: I calculated the total number of units sold.
-• Profit margin: I computed the ratio of net profit to total revenue, usually 
-expressed as a percentage.
-
-***N.B:*** REVENUE = SUM OF SALES. 
-This is done by following the steps below:
-1. I selected the "Card" visualization type, then dragged and dropped the "Sales" 
-into the designated field. I converted it to the "SUM" aggregation. 
-2. Additionally, I adjusted the display units to show values in millions, 
-billions, trillions, or hundreds, and customize the number of decimal 
-places as needed.
-
-
-
-![Visual-7](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/97b5f71a-3e54-4f3e-abb4-dcddece926f6)
-
-Sales quantity 
-• I selected the "Card" visual, then dragged and dropped the "Quantity 
-Ordered" int the designated field. 
-• I accessed the "Format" option for the visual, and adjusted the callout 
-value to change the display unit of the quantity ordered as desired.
-
-![Visual-7a](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/fd15dc8a-3adb-4065-b74c-3cad72df0026)
-
-
-
-• Furthermore, I clicked on new measure, then; 
- 
-• Find the total cost by using the new measure 
-• Find the total sales by using the new measure
-• Find the profit margin by using this formula in the measure.
-• Choose the measure created and placed it in the card visual and designed it 
-using the “Format visual
-
-
-![Visual-7b](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/87075276-707c-46d9-9bc2-2c495e3c34cb)
-
 
 
 ## Data Analysis and Visualization:
 
 Several expressions and functions were made to arrive at the desired KPI or Metrics.
-I arrived at a report with a single dashboard consisting of different visuals such as bar chart, doughnut chart, line chart, slicer, and KPIs, giving the summary of the insights gained into the company's performance.
+I arrived at a report with a single dashboard consisting of different visuals such as bar chart, doughnut chart, clustered bar chart, and KPIs, giving the summary of the insights gained into the Human Resource performance.
 
 ## Features of the Report:
 The dashboard conveys information about the following key areas:
-- QUANTITY OF PRODUCTS ORDERED
-- TOTAL REVENUE
-- PROFIT MARGIN
-- KEY CUSTOMERS
-- TOP-SELLING PRODUCTS
-- SALES TRENDS
+- Age groups
+- Gender
+- Distance from home
+- Marital status
+- Attrition by job level
+- Departures by department
+- Business travel impact
+- Total years in current roles
+- Overtime performance ratings
+- Monthly income
+- Attrition increase level
+- Employee well-being
 
-![Screenshot 2024-01-06 050336](https://github.com/RemedyData/Meriskill_Skill_Sales_Analysis_Internship/assets/137626163/d3c956d6-5f87-4833-86c5-2945775915f9)
+![Meriskill-Internship-2nd-Project-Pics](https://github.com/RemedyData/Meriskill_Skill_Human_Resource_Analysis_Internship/assets/137626163/a661761f-ea12-4068-a733-ac8454fc0598)
+
 
 
 
@@ -217,22 +171,23 @@ The dashboard conveys information about the following key areas:
 
 Summary of the insights gained into the company's performance: 
 
-▪︎A total revenue of £34,492,000 was realized within the year 2019.
+▪︎There are 1,470 employees in total representing the human resources force of the company. 
 
-▪︎With about 21 products which was in stock, 209,000 orders were received within the year 2019 generating a profit margin of 53.83% .
+▪︎84% (1,233) of the total employees are active leaving 16%(237) of the total employees attritted.
 
-▪︎USB-C Charging Cable got the highest demand rate of 23,975. While Macbook Pro Laptop happens to be the product with the most generating returns of £8,037,600. iphone competed with Macbook Pro Laptop with a difference of £3,243,300. 
+▪︎There is a higher rate of attrition in employees that are single than in married and divorced ones with the males gender leading with 26.49%.
 
-▪︎Highest revenue of £4,613,443.34 was made in December,  within the year 2019.
+▪︎53.59% of the employees that are being attritted have a good work life balance. While 10.55% of them have a bad work life balance. 
 
-▪︎Lowest revenue of £1,822,256.73 was made in January, within the year 2019.
+▪︎Sales executives, Research scientists and Laboratory technicians happens to be the top 3 educational professionals that are being attritted.
 
-▪︎USA happens to be the country with the highest revenue. 
+▪︎Employees above age 30 had the highest attrition rate follow by those in their twenties next to those near age 50 and above.
+▪︎60.76% of the employees attritted live nearby the company location. 
 
 
 ## Recommendation
 
-- There are no doubts that the business is performing well as there are potential leads within the company yielding higher returns.
+- There are no doubts that the Human Resource is performing  within the company yielding higher returns.
 
 - More advertisements in form of placards, television spots and print publications should be done in the month of December as more sales is being made in this month.
   
