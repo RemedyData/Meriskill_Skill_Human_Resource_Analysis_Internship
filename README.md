@@ -187,15 +187,13 @@ Summary of the insights gained into the company's performance:
 
 ## Recommendation
 
-- There are no doubts that the Human Resource is performing  within the company yielding higher returns.
+- There are no doubts that the Human Resource performancde is staggering  which definitely affects the company's returns.
 
-- More advertisements in form of placards, television spots and print publications should be done in the month of December as more sales is being made in this month.
-  
-- Directing more sales to USA happens to be a gold mine for the company.
+-
 
-- Based on the analysis of the Customers-purchasing pattern, It is suggested that USB-Charging Cables should be made available for sales at all time due to its high demand.
+- It is suggested that a friendly survey be conducted among the employees at certain intervals yearly so as give the management team a better understanding of their employees.
 
-- It is suggested that more capital be invested in the sales of Macbook Pro Laptop alongside with iphone so as increase the company's leverage. 
+- Likewise, more incentives should be offered to the employees so as to retain them for a longer period. 
 
 
 ---
