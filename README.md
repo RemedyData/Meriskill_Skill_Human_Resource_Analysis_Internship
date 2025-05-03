@@ -202,4 +202,3 @@ Summary of the insights gained into the company's performance:
 
 ### Thank you for reading.
 
-I am open for entry-level data analyst role.
